@@ -1,0 +1,1 @@
+ <%= @count = @party.payments.sum(:amount_paid, :condition => {:payment_type => ["credit"]}) %>
